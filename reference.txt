@@ -1,0 +1,60 @@
+"node_modules/bootstrap/dist/css/bootstrap.css"
+ng serve --port 9000 --open
+npm install --save--dev bootstrap@latest
+==========================================================
+MyApp
+------
+Discuss Basic Angular Application
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+package.json
+angular.json 
+is used for configuring number of settings for the project..
+e2e - testing folder
+node_modules - npm packages
+src - source folder
+assets - static assets like images/css
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+MyApp1
+------
+Getting Started with Angular App
+Adding Images and bootstrap css files.
+
+MyApp2
+------
+Creating Component and communicating the components.
+databinding
+output databinding(string interpolation/property databinding)
+event databinding
+
+MyApp3
+------
+two way databinding
+
+MyApp4
+------
+component communication
+
+MyAPp5
+------
+structural directives(ngIF,ngFor,ngSwitch,ngTemplate)
+
+MyAPp6
+------
+Attribute directives(ngStyle,ngClass)
+
+MyAPP7
+------
+Local Reference & ViewChaild & LifeCycle Hooks
+
+MyApp8
+------
+Services
+
+Note: MyAPP7 & MyApp8 need to show the demo by commenting the one component from approot ts file.
+
+MyApp9
+------
+Routing
+
