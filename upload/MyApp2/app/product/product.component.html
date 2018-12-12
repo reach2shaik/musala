@@ -1,0 +1,12 @@
+<div class="container">
+  {{titleMsg}}<br/>
+  pid<input type="text" class="form-control col-4" (input)="onEnterPid($event)"><br/>
+  pname<input type="text" class="form-control col-4" (input)="onEnterPname($event)"><br/>
+  price<input type="text" class="form-control col-4" (input)="onEnterPrice($event)"><br/>
+  <button class="btn btn-primary" [disabled]="disableAddProductButton">AddProduct</button><br/>
+  you are sucessfully stored below product details into DB!<br/>
+  <div class="card col-5 form-control" >
+    {{pid}} {{pname}} {{price}}
+  </div>
+  
+</div>

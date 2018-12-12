@@ -1,0 +1,20 @@
+<div class="container">
+  Style Binding using ngStyle Directive example.<br/>
+  <hr> 
+  <div [ngStyle]="stylelVar">
+      The style of this text changed by using ngstyle directive.<br/>
+  </div>
+  
+  <input type="radio" name="radioBtn" (click)="setValue(1)" class="custom-radio ">Red
+  <input type="radio" name="radioBtn" (click)="setValue(2)" class="custom-radio  ">Green
+  <input type="radio" name="radioBtn" (click)="setValue(3)" class="custom-radio  ">Blue
+  <br/><br/>
+
+  Style Binding using ngClass Directive example.<br/>
+  <hr> 
+  <div [ngClass]="{available:isCondition,unavailable:!isCondition}" >
+      The style of the this text changed by using ngclass directive.<br/>
+  </div>
+  
+
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+  pid<input type="text" class="form-control col-3" [(ngModel)]="pid"><br/>
+  pname<input type="text" class="form-control col-3" [(ngModel)]="pname"><br/>
+  price<input type="text" class="form-control col-3" [(ngModel)]="price"><br/>
+  <button class="btn btn-primary" (click)="onAddProduct()">AddProduct</button><br/><br/>
+  List of added product details.<br/>
+
+  <div *ngIf="(prodListSize>0);else defaultMessage">
+    <div *ngFor="let prod of prodList;even as e" class="form-control col-3">      
+      {{e}}  {{prod.pid}}  {{prod.pname}}  {{prod.price}}
+    </div>
+  </div>  
+  <ng-template #defaultMessage>
+    zero products are added into the list.
+  </ng-template>
+  <br/><br/>
+  
+  <ul *ngFor="let person of people"
+    [ngSwitch]="person.country"> 
+
+    <li *ngSwitchCase="'UK'" class="text-success">
+      {{ person.name }} ({{ person.country }})
+    </li>
+    <li *ngSwitchCase="'USA'"
+    class="text-primary">{{ person.name }} ({{ person.country }})
+    </li>
+    <li *ngSwitchCase="'HK'"
+    class="text-danger">{{ person.name }} ({{ person.country }})
+    </li>
+    <li *ngSwitchDefault 
+    class="text-warning">{{ person.name }} ({{ person.country }})
+    </li>
+  </ul>
+
+</div>
