@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <form (ngSubmit)="onAddNewProduct(productForm)" #productForm="ngForm">
+      Pid
+      <input type="text" class="form-control" name="pid" ngModel required >
+      
+      Pname
+      <input type="text" class="form-control" name="pname" ngModel required>
+     
+      Price
+      <input type="text" class="form-control" name="price" ngModel required>
+      
+
+      <button class="btn btn-primary" >AddProduct</button>
+      <!-- <button class="btn btn-primary" [disabled]="!productForm.valid">AddProduct</button> -->
+    </form>
+    </div>
+  </div>
+</div>
