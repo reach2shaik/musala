@@ -1,0 +1,48 @@
+<div class="container">
+  
+   <form (ngSubmit)="VehicleRegistration(registerForm)" #registerForm="ngForm">
+     <div ngModelGroup="personalDetails">
+      <div class="row">
+        <div class="col-1">userName</div>
+        <div class="col-3"><input type="text" class="form-control" name="userName" ngModel></div>
+      </div>
+
+      <div class="row">
+          <div class="col-1">passWord</div>
+          <div class="col-3"><input type="text" class="form-control" name="passWord" ngModel></div>
+      </div>
+    </div>
+      <div class="row">
+            <div class="col-1">vehicleNo</div>
+            <div class="col-3"><input type="text" class="form-control" name="vehicleNo" ngModel></div>
+      </div>
+
+      <div class="row">
+          <div class="col-1">mobileNo</div>
+          <div class="col-3"><input type="text" class="form-control" name="mobileNo" ngModel></div>
+        </div>
+
+      <div class="row">
+          <div class="col-1">email</div>
+          <div class="col-3"><input type="text" class="form-control" name="email" ngModel></div>          
+      </div> 
+      <div>
+        <button class="btn btn-primary">VehicleRegistration</button>       
+      </div>
+      <hr/>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            Register Vehicle Details are Here!
+            {{userName}}
+            {{passWord}}
+            {{vehicleNumber}}
+            {{mobileNumber}}
+            {{email}}
+          </div>
+        </div>
+      </div>
+      
+   </form>
+  
+</div>
